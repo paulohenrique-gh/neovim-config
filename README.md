@@ -41,6 +41,14 @@ shows information about the symbol under the cursor on a floating window
 
 code actions for when lsp flags some error, cursor needs to be on the symbol with the error
 
+- space w:
+
+same as ctrl+w
+
+- space gf:
+
+format file
+
 ## Important notes
 
 - live_grep needs fd and ripgrep installed
