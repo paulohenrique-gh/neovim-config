@@ -1,6 +1,7 @@
 -- generalized lsp, for things like rubopcop which isn't an LSP but with null_ls it acts like one (??)
 -- stylua needs to be installed with :Mason
 -- issue with eslint_d fixed according to stack overflow solution: https://stackoverflow.com/questions/78150730/failed-to-load-builtin-eslint-d-for-method-diagnostics
+-- need to run npm init and npm init @eslint/config in project root
 return {
   "nvimtools/none-ls.nvim",
   dependencies = {
