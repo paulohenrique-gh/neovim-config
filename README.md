@@ -49,6 +49,14 @@ same as ctrl+w
 
 format file
 
+- ctrl + h/j/k/l 
+
+window navigation
+
+- space bf
+
+floating buffers list
+
 ## Important notes
 
 - live_grep needs fd and ripgrep installed
