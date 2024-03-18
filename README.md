@@ -57,6 +57,10 @@ window navigation
 
 floating buffers list
 
+- space fs
+
+telescope for sessions
+
 ## Important notes
 
 - live_grep needs fd and ripgrep installed
