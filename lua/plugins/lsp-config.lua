@@ -14,7 +14,7 @@ return {
 	},
 	{
 		"neovim/nvim-lspconfig",
-    lazy = false,
+		lazy = false,
 		config = function()
 			local capabilities = require("cmp_nvim_lsp").default_capabilities()
 
@@ -22,19 +22,30 @@ return {
 
 			-- repeat for every language
 			lspconfig.lua_ls.setup({
-        capabilities = capabilities
-      })
+				capabilities = capabilities,
+			})
 			lspconfig.tsserver.setup({
-        capabilities = capabilities
-      })
+				capabilities = capabilities,
+			})
 			lspconfig.html.setup({
-        capabilities = capabilities
-      })
+				capabilities = capabilities,
+				filetypes = { "html", "erb" },
+			})
 
 			vim.keymap.set("n", "K", vim.lsp.buf.hover, {})
 			vim.keymap.set("n", "<leader>gd", vim.lsp.buf.definition, {})
 			vim.keymap.set("n", "<leader>gr", vim.lsp.buf.references, {})
 			vim.keymap.set("n", "<leader>ca", vim.lsp.buf.code_action, {})
+
+			vim.diagnostic.config({
+				virtual_text = false,
+				virtual_lines = false,
+			})
+
+			vim.keymap.set("n", "<space>e", vim.diagnostic.open_float)
+			vim.keymap.set("n", "[d", vim.diagnostic.goto_prev)
+			vim.keymap.set("n", "]d", vim.diagnostic.goto_next)
+			vim.keymap.set("n", "<space>q", vim.diagnostic.setloclist)
 		end,
 	},
 }

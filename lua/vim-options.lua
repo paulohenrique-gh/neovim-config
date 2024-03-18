@@ -44,3 +44,4 @@ vim.g.mapleader = " "
 
 vim.api.nvim_set_keymap('n', '<Leader>w', '<C-w>', { noremap = true })
 
+vim.opt.swapfile = false
