@@ -1,4 +1,5 @@
 -- Set line numbers
+vim.cmd("set number")
 vim.cmd("set relativenumber")
 
 -- Replace Tab key with spaces
