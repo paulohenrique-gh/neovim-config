@@ -1,5 +1,5 @@
 -- Set line numbers
-vim.cmd("set number")
+vim.cmd("set relativenumber")
 
 -- Replace Tab key with spaces
 vim.cmd("set expandtab")
@@ -45,3 +45,9 @@ vim.g.mapleader = " "
 vim.api.nvim_set_keymap('n', '<Leader>w', '<C-w>', { noremap = true })
 
 vim.opt.swapfile = false
+
+vim.opt.clipboard = "unnamedplus"
+
+vim.opt.virtualedit = "block"
+
+vim.opt.inccommand = "split"
