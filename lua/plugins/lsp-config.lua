@@ -29,7 +29,6 @@ return {
 			})
 			lspconfig.html.setup({
 				capabilities = capabilities,
-				filetypes = { "html", "eruby" },
 			})
       lspconfig.ruby_ls.setup({
         capabilities = capabilities,

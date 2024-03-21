@@ -61,6 +61,12 @@ floating buffers list
 
 telescope for sessions
 
+### Incremental Selection
+init_selection = "<CR>",
+node_incremental = "<TAB>",
+scope_incremental = "<CR>",
+node_decremental = "<S-TAB>",
+
 ## Important notes
 
 - live_grep needs fd and ripgrep installed
