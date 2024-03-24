@@ -64,6 +64,7 @@ telescope for sessions
 - ctrl + y ,
 
 confirm emmet
+tutorial: https://raw.githubusercontent.com/mattn/emmet-vim/master/TUTORIAL
 
 ### Incremental Selection
 init_selection = "<CR>",
