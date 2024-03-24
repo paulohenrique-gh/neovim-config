@@ -61,6 +61,10 @@ floating buffers list
 
 telescope for sessions
 
+- ctrl + y ,
+
+confirm emmet
+
 ### Incremental Selection
 init_selection = "<CR>",
 node_incremental = "<TAB>",
