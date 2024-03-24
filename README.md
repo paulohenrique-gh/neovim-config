@@ -66,6 +66,10 @@ telescope for sessions
 confirm emmet
 tutorial: https://raw.githubusercontent.com/mattn/emmet-vim/master/TUTORIAL
 
+### Nvim-surround
+https://github.com/kylechui/nvim-surround
+`:h nvim-surround.usage`
+
 ### Incremental Selection
 init_selection = "<CR>",
 node_incremental = "<TAB>",
@@ -78,7 +82,7 @@ node_decremental = "<S-TAB>",
   - links:
     - https://github.com/sharkdp/fd?tab=readme-ov-file#installation
     - https://github.com/BurntSushi/ripgrep?tab=readme-ov-file#installation
-   
+       
 - to install missing languages in treesitter, run TSInstall <language-name>. Javascript might need it.
 
 - `:h lua.lsp.buf` shows information about buf modeule in lua_lsp, maybe something like that can be done for other languages as well: lookup help for the lsp to search for functions and configure it in the corresponding lua plugin file like in lsp-config.lua 
