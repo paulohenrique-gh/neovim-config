@@ -19,6 +19,7 @@ git clone git@github.com:paulohenrique-gh/neovim-config.git ~/.config/nvim
 ```
 
 ## Current custom keybindings
+
 - space: leader
 
 - ctrl+n: `:Neotree filesystem reveal left<CR>`
@@ -49,7 +50,7 @@ same as ctrl+w
 
 format file
 
-- ctrl + h/j/k/l 
+- ctrl + h/j/k/l
 
 window navigation
 
@@ -67,10 +68,12 @@ confirm emmet
 tutorial: https://raw.githubusercontent.com/mattn/emmet-vim/master/TUTORIAL
 
 ### Nvim-surround
+
 https://github.com/kylechui/nvim-surround
 `:h nvim-surround.usage`
 
 ### Incremental Selection
+
 init_selection = "<CR>",
 node_incremental = "<TAB>",
 scope_incremental = "<CR>",
@@ -82,9 +85,8 @@ node_decremental = "<S-TAB>",
   - links:
     - https://github.com/sharkdp/fd?tab=readme-ov-file#installation
     - https://github.com/BurntSushi/ripgrep?tab=readme-ov-file#installation
-       
 - to install missing languages in treesitter, run TSInstall <language-name>. Javascript might need it.
 
-- `:h lua.lsp.buf` shows information about buf modeule in lua_lsp, maybe something like that can be done for other languages as well: lookup help for the lsp to search for functions and configure it in the corresponding lua plugin file like in lsp-config.lua 
+- `:h lua.lsp.buf` shows information about buf modeule in lua_lsp, maybe something like that can be done for other languages as well: lookup help for the lsp to search for functions and configure it in the corresponding lua plugin file like in lsp-config.lua
 
 - Video to help setting up lsp: https://www.youtube.com/watch?v=S-xzYgTLVJE
