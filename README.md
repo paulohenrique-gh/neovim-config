@@ -67,10 +67,32 @@ telescope for sessions
 confirm emmet
 tutorial: https://raw.githubusercontent.com/mattn/emmet-vim/master/TUTORIAL
 
+### vim-test
+
+- leader >
+
+test nearest
+
+- leader > 
+
+test file
+
+- leader a 
+
+test suite
+
+- leader l
+
+test last
+
+- leader k
+
+test visit
+
 ### Nvim-surround
 
 https://github.com/kylechui/nvim-surround
-`:h nvim-surround.usage`
+https://github.com/tpope/vim-surround/blob/master/doc/surround.txt`:h nvim-surround.usage`
 
 ### Incremental Selection
 
