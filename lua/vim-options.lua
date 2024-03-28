@@ -52,3 +52,11 @@ vim.opt.clipboard = "unnamedplus"
 vim.opt.virtualedit = "block"
 
 vim.opt.inccommand = "split"
+
+vim.o.signcolumn = "yes:1"
+
+vim.diagnostic.config {
+  float = {
+    border = "rounded"
+  },
+}

@@ -112,3 +112,6 @@ node_decremental = "<S-TAB>",
 - `:h lua.lsp.buf` shows information about buf modeule in lua_lsp, maybe something like that can be done for other languages as well: lookup help for the lsp to search for functions and configure it in the corresponding lua plugin file like in lsp-config.lua
 
 - Video to help setting up lsp: https://www.youtube.com/watch?v=S-xzYgTLVJE
+
+- Other videos: setup vim-test, tmuxifier
+https://www.youtube.com/watch?v=_YaI2vDbk0o
