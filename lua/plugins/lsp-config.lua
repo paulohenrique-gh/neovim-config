@@ -30,12 +30,12 @@ return {
 			lspconfig.html.setup({
 				capabilities = capabilities,
 			})
-      lspconfig.cssls.setup({
-        capabilities = capabilities,
-      })
-      lspconfig.ruby_ls.setup({
-        capabilities = capabilities,
-      })
+			lspconfig.cssls.setup({
+				capabilities = capabilities,
+			})
+			lspconfig.solargraph.setup({
+				capabilities = capabilities,
+			})
 
 			vim.keymap.set("n", "K", vim.lsp.buf.hover, {})
 			vim.keymap.set("n", "<leader>gd", vim.lsp.buf.definition, {})
@@ -45,12 +45,22 @@ return {
 			vim.diagnostic.config({
 				virtual_text = false,
 				virtual_lines = false,
+				underline = false,
 			})
 
 			vim.keymap.set("n", "<space>e", vim.diagnostic.open_float)
 			vim.keymap.set("n", "[d", vim.diagnostic.goto_prev)
 			vim.keymap.set("n", "]d", vim.diagnostic.goto_next)
 			vim.keymap.set("n", "<space>q", vim.diagnostic.setloclist)
+
+			for _, diag in ipairs({ "Error", "Warn", "Info", "Hint" }) do
+				vim.fn.sign_define("DiagnosticSign" .. diag, {
+					text = "",
+					texthl = "DiagnosticSign" .. diag,
+					linehl = "",
+					numhl = "DiagnosticSign" .. diag,
+				})
+			end
 		end,
 	},
 }
