@@ -1,6 +1,6 @@
 return {
-  "brenoprata10/nvim-highlight-colors",
+  "NvChad/nvim-colorizer.lua",
   config = function()
-    require 'nvim-highlight-colors'.setup({})
+    require 'colorizer'.setup({})
   end
 }
