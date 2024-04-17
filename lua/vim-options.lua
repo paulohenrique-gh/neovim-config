@@ -73,3 +73,10 @@ vim.lsp.handlers['textDocument/signatureHelp'] = vim.lsp.with(
   vim.lsp.handlers.signature_help,
   { border = 'rounded' }
 )
+
+vim.opt.updatetime = 250
+
+vim.opt.scrolloff = 10
+
+vim.opt.linebreak = true
+vim.opt.wrap = true
