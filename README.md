@@ -8,7 +8,7 @@ Official link: https://github.com/neovim/neovim/releases/tag/stable
 
 ## Setting up `init.lua`
 
-If there is any current `init.lua` file, back it up before proceding
+If you already have an existing init.lua file, it's recommended to back it up before proceeding. You can do this with the following commands:
 
 ```bash
 mv ~/.config/nvim ~/.config/nvim.bak
@@ -22,74 +22,40 @@ git clone git@github.com:paulohenrique-gh/neovim-config.git ~/.config/nvim
 
 - space: leader
 
-- space nn: `:Neotree filesystem reveal left<CR>`
+- <leader>nn: Opens Neotree on the left side of the screen
 
-Opens Neotree on the left side of the screen
+- <leader>nc: Close Neotree
 
-- space nc: `:Neotree close<CR>`
+- <leader><leader>: Fuzzy find files with Telescope
 
-Close Neotree
+- <leader>fg: Telescope live_grep
 
-- ctrl+p:
+- shift + k: Shows information about the symbol under the cursor in a floating window.
 
-Opens up Telescope for finding files in the project
+- <leader>ca: Offers code actions when the LSP flags some error. The cursor needs to be on the symbol with the error.
 
-- space fg:
+- <leader>w: Same as ctrl + w
 
-live_grep for searching term in project files
+- <leader>gf: Auto format
 
-- shift+k:
+- ctrl + h/j/k/l window navigation
 
-shows information about the symbol under the cursor on a floating window
+- <leader>bf: Floating buffers list.
 
-- space ca:
+- <space>fs: Telescope for sessions.
 
-code actions for when lsp flags some error, cursor needs to be on the symbol with the error
-
-- space w:
-
-same as ctrl+w
-
-- space gf:
-
-format file
-
-- ctrl + h/j/k/l
-
-window navigation
-
-- space bf
-
-floating buffers list
-
-- space fs
-
-telescope for sessions
-
-- ctrl + y ,
-
-confirm emmet
+- ctrl + y: Confirms emmet
 tutorial: https://raw.githubusercontent.com/mattn/emmet-vim/master/TUTORIAL
 
-### vim-test
+- <leader>t: Test nearest
 
-- leader >
+- <leader>T: Test file
 
-test nearest
+- <leader>a: Test suite 
 
-- leader > 
+- <leader>l: Test last
 
-test file
-
-- leader a 
-
-test suite
-
-- leader l
-
-test last
-
-- leader k
+- <leader>k: Test visit
 
 test visit
 
@@ -111,9 +77,9 @@ node_decremental = "<S-TAB>",
   - links:
     - https://github.com/sharkdp/fd?tab=readme-ov-file#installation
     - https://github.com/BurntSushi/ripgrep?tab=readme-ov-file#installation
-- to install missing languages in treesitter, run TSInstall <language-name>. Javascript might need it.
+- To install missing languages in treesitter, run TSInstall <language-name>. Javascript might need it.
 
-- `:h lua.lsp.buf` shows information about buf modeule in lua_lsp, maybe something like that can be done for other languages as well: lookup help for the lsp to search for functions and configure it in the corresponding lua plugin file like in lsp-config.lua
+- `:h lua.lsp.buf` shows information about buf module in lua_lsp, maybe something like that can be done for other languages as well: lookup help for the lsp to search for functions and configure it in the corresponding lua plugin file like in `lsp-config.lua`
 
 - Video to help setting up lsp: https://www.youtube.com/watch?v=S-xzYgTLVJE
 
