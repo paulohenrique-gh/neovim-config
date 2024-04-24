@@ -22,9 +22,13 @@ git clone git@github.com:paulohenrique-gh/neovim-config.git ~/.config/nvim
 
 - space: leader
 
-- ctrl+n: `:Neotree filesystem reveal left<CR>`
+- space nn: `:Neotree filesystem reveal left<CR>`
 
 Opens Neotree on the left side of the screen
+
+- space nc: `:Neotree close<CR>`
+
+Close Neotree
 
 - ctrl+p:
 
