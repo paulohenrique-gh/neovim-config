@@ -57,6 +57,12 @@ tutorial: https://raw.githubusercontent.com/mattn/emmet-vim/master/TUTORIAL
 
 - <leader>k: Test visit
 
+### Splitjoin
+
+- gS: Split one line into multiple lines, useful for arrays / hashes
+
+- gJ: Join a block into a single line
+
 test visit
 
 ### Nvim-surround
