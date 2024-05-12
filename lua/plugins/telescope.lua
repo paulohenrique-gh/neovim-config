@@ -14,6 +14,7 @@ return {
 			-- https://github.com/BurntSushi/ripgrep?tab=readme-ov-file#installation
 			vim.keymap.set("n", "<leader>fg", builtin.live_grep, {})
 			vim.keymap.set("n", "<leader>fs", ":Telescope persisted<CR>", {})
+      vim.keymap.set("n", "<leader>fb", ":Telescope buffers<CR>", {})
 		end,
 	},
 	{

@@ -30,6 +30,8 @@ git clone git@github.com:paulohenrique-gh/neovim-config.git ~/.config/nvim
 
 - <leader>fg: Telescope live_grep
 
+- <leader>fb: Telescope buffers
+
 - shift + k: Shows information about the symbol under the cursor in a floating window.
 
 - <leader>ca: Offers code actions when the LSP flags some error. The cursor needs to be on the symbol with the error.
