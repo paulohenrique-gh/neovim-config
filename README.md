@@ -22,6 +22,8 @@ git clone git@github.com:paulohenrique-gh/neovim-config.git ~/.config/nvim
 
 - space: leader
 
+- \<leader>\<tab>: Alternate between current and previous buffer
+
 - \<leader>nn: Opens Neotree on the left side of the screen
 
 - \<leader>nc: Close Neotree
